@@ -1,0 +1,3 @@
+od_basics_homepage:
+    path:     /
+    defaults: { _controller: ODBasicsBundle:Default:index }
