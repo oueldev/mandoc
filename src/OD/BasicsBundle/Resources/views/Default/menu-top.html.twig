@@ -1,0 +1,10 @@
+{# src/OD/BasicsBundle/Resources/views/Default/menu-top.html.twig #}
+<div class="od-navigation">
+    <div class="mt-navigation hidden-xs">
+        <ul id="odnav">
+            {% for item in navigation %}
+                <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

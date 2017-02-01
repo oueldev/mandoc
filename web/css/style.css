@@ -1,0 +1,13 @@
+body{margin:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
+    display: block;
+}
+.header-container{background: #17a75c none repeat scroll 0 0;color: #fff;}
+.container{margin-left: auto;margin-right: auto;padding-left: 15px;padding-right: 15px;max-width: 1200px;width: 1200px;}
+/*HEADER*/
+.header .logo {
+    margin: 0;
+    outline: medium none;
+    padding: 35px 0 0;
+}
+.pull-left {}

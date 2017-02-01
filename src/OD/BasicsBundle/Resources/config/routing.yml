@@ -1,3 +1,7 @@
 od_basics_homepage:
     path:     /
     defaults: { _controller: ODBasicsBundle:Default:index }
+od_basics_menu:
+    resource: "@ODBasicsBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /menu

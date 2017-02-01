@@ -1,13 +1,39 @@
+{# src/OD/BasicsBundle/Resources/views/layout.html.twig #}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Welcome!{% endblock %}</title>        
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header class="header-container">
+            <div class="container clearer">
+                <div class="show-grid row header">
+                    <div class="header-act">
+                        {#<div class="logo-wrapper grid12-4 v-grid">
+                            <div class="logo pull-left"><img src="{{asset('images/logo.jpg')}}" /></div>                            
+                        </div>#}
+                        <div class="user-menu clearer grid12-8 v-grid">SOME TEXT</div>
+                    </div>
+                </div>
+            </div>
+            {#<div class="container clearer">
+                <div class="nav-top">
+                    {{ render(controller("ODBasicsBundle:Default:menu")) }}
+                </div>            
+            </div> #}
+        </header>
+        <section class="main-container">
+            <div id="main">
+                <div class="left-content"></div>
+                <div class="main-content">{% block body %}{% endblock %}</div>
+            </div>
+        </section>
+        <footer class="footer-container"></footer>     
         {% block javascripts %}{% endblock %}
     </body>
 </html>
